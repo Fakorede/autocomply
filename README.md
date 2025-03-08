@@ -1,6 +1,6 @@
 # CarCompat
 
-CarCompat is the static analysis tool we present in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps" available [here](https://arxiv.org/abs/2503.04003).
+CarCompat is the static analysis tool we present in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps".
 
 ## Requirements
 
