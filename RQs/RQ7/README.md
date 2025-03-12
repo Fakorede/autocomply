@@ -26,9 +26,9 @@
 Na, CM, Au, Sa, Sw
 -->
 
-Details of the detected issues are available [here](/RQs/RQ4/RQ4%20-%20Detailed%20Issues%20Report/).
+Details of the detected issues are available [here](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4%20-%20Detailed%20Issues%20Report/).
 
-[RQ4.csv](/RQs/RQ4/RQ4.csv) contains the table summarizing these issues.
+[RQ4.csv](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4.csv) contains the table summarizing these issues.
 
 
 ## Conclusion

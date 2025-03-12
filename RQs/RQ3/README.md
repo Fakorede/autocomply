@@ -6,7 +6,7 @@ To evaluate the applicability of CarCompat, we analyzed its performance on two d
 
 This directory contains the complete results of our evaluation of `CarCompat` on all apps in **Corpus-G**.
 
-Apps in Corpus-G are made available in the `/apks` folder [here](/apks/).
+Apps in Corpus-G are made available in the `/apks` folder [here](https://anonymous.4open.science/r/carcompat-0503/apks/).
 
 Apps in Corpus-P are unavailble due to Google's distribution policy.
 

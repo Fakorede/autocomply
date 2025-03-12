@@ -2,11 +2,11 @@
 
 > Can CarCompat effectively and precisely detect Android Auto compatibility issues?
 
-To evaluate the effectiveness of CarCompat, we assessed its accuracy on 15 Android Auto apps where either Android Lint or CarCompat detected at least one compatibility issue in [RQ3](/RQs/RQ3/README.md).
+To evaluate the effectiveness of CarCompat, we assessed its accuracy on 15 Android Auto apps where either Android Lint or CarCompat detected at least one compatibility issue in [RQ3](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/README.md).
 
-Details of the detected issues are available [here](/RQs/RQ4/RQ4%20-%20Detailed%20Issues%20Report/).
+Details of the detected issues are available [here](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4%20-%20Detailed%20Issues%20Report/).
 
-[RQ4.csv](/RQs/RQ4/RQ4.csv) contains the table summarizing these issues.
+[RQ4.csv](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4.csv) contains the table summarizing these issues.
 
 ## Answer
 
