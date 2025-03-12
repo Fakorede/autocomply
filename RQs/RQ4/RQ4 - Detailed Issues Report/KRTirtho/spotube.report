@@ -1,0 +1,46 @@
+java -jar app/build/libs/carcompat-0.3.0.jar -a apks/spotube_38.apk 
+
+=== Android Auto Compatibility Analysis ===
+
+APK validation successful: apks/spotube_38.apk
+Time taken for APK validation: 0s
+
+Warning: Current memory allocation may be insufficient for large APKs
+Current allocation: 4GB
+Recommended allocation: 10GB
+For better performance with large APKs, consider running with:
+java -Xmx10g -jar carcompat-0.2.0.jar -a /path/to/your/app.apk
+
+Initializing analysis framework...
+Time taken for Soot initialization: 2s
+
+=== Checking AndroidManifest.xml ===
+Time taken for Manifest analysis: 0s
+✓ 'MediaBrowserService' has been properly declared in manifest file.
+✓ Media Service has been exported.
+✗ 'MEDIA_PLAY_FROM_SEARCH' NOT declared.
+MediaService: com.ryanheise.audioservice.AudioService
+
+
+=== Checking Media UI Implementation ===
+
+Service Analysis Results for MediaService
+----------------------------------------
+ISSUE: Missing or invalid onGetRoot implementation
+Required signature: BrowserRoot onGetRoot(String clientPackageName, int clientUid, Bundle rootHints)
+This method is required to validate connecting clients and establish the root media hierarchy
+
+ISSUE: Missing or invalid onLoadChildren implementation
+Required signature: void onLoadChildren(String parentId, Result<List<MediaItem>> result)
+This method is required to provide the media browse hierarchy to clients
+Time taken for UI analysis: 0s
+
+=== Checking Media Session Implementation ===
+
+Analysis Summary:
+================
+Classes analyzed: 0
+Time taken for Playback analysis: 0s
+
+=== Analysis Complete ===
+Time taken for Total Analysis: 2s

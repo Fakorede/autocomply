@@ -1,6 +1,26 @@
 # CarCompat
 
-CarCompat is the static analysis tool we present in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps".
+CarCompat is the static analysis tool we introduce in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps".
+
+
+## Artifacts
+
+### Python Scripts
+- [github_code_search.py](/github_code_search.py) - Python script we used for searching GitHub repositories for android auto patterns. 
+- [github_repo_details.py](/github_repo_details.py) - Python utility we used for extracting detailed metadata from the GitHub repositories we retrieved.
+- [car_feat.py](/car_feat.py) - Python binary analysis tool used to perform Android Auto specific feature checks.
+
+### Data Files
+- [github_search_results.csv](/github_search_results.csv) - contains the GitHub code search results for Android Auto supported repositories.
+- [github_repo_details.csv](/github_repo_details.csv) - contains dataset of GitHub repository metadata including relevant metrics.
+
+### Application Resources
+- [apks](/apks) - directory containing the apks in corpus-g used for compatibility testing and analysis.
+- carcompat-0.3.0.jar - jar library tool for android auto compatibility testing, available for download on the releases page.
+
+### Research Output
+- [Evaluation Results](/RQs/) - directory containing evaluation results organized by research questions. Includes statistical analysis, test outputs, and performance metrics used to validate project hypotheses.
+
 
 ## Requirements
 
@@ -9,33 +29,37 @@ CarCompat is the static analysis tool we present in our paper "Analyzing and Det
 
 ## Setup
 
-```
-pip install git+https://github.com/appknox/pyaxmlparser.git
-pip install androguard==3.3.5
-chmod +x car_feat.py
+```shell
+$ git clone <repo>
+$ cd <repo>
+$ git clone https://github.com/Sable/android-platforms
+$ pip install git+https://github.com/appknox/pyaxmlparser.git
+$ pip install androguard==3.3.5
+$ chmod +x car_feat.py
 ```
 
 ## Compile
 
+Download our tool on the releases page.
+
 ```shell
-./gradlew build
+# or build manually
+$ ./gradlew build
 ```
 
 ## Run
 
-All open source apks used for the evaluation section of our paper is available [here](apks/) 
-
+All **open source** apks used for the evaluation section of our paper is available [here](apks/).
 
 ```shell
-# basic usage
-java -jar app/build/libs/carcompat-0.2.0.jar -a /path/to/your/app.apk -c <category>
-
-# to run with more memory for larger apks
-java -Xmx10g -jar app/build/libs/carcompat-0.2.0.jar -a /path/to/your/app.apk -c <category>
-
 # example usage
-java -jar app/build/libs/carcompat-0.3.0.jar -a apks/retromusicplayer.apk -c media
+$ java -jar carcompat-0.3.0.jar -a apks/retromusicplayer.apk
 ```
+
+## Evaluation Results
+
+The reports for our research are available in the [RQs](/RQs/) folder.
+Detailed reports for each apk analysis has been saved and made available [here](RQs/RQ4&5/) and [here](RQs/RQ3/).
 
 ## License
 This artifact is licensed under the GPL v3 License. See [LICENSE](LICENSE) for details.

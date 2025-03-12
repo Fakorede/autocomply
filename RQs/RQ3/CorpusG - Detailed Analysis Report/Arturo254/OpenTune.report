@@ -1,0 +1,46 @@
+java -jar app/build/libs/carcompat-0.3.0.jar -a apks/opentune.apk
+
+=== Android Auto Compatibility Analysis ===
+
+APK validation successful: apks/opentune.apk
+Time taken for APK validation: 0s
+
+Warning: Current memory allocation may be insufficient for large APKs
+Current allocation: 4GB
+Recommended allocation: 10GB
+For better performance with large APKs, consider running with:
+java -Xmx10g -jar carcompat-0.2.0.jar -a /path/to/your/app.apk
+
+Initializing analysis framework...
+Time taken for Soot initialization: 5s
+
+=== Checking AndroidManifest.xml ===
+Time taken for Manifest analysis: 0s
+✓ 'MediaBrowserService' has been properly declared in manifest file.
+✓ Media Service has been exported.
+✓ 'MEDIA_PLAY_FROM_SEARCH' has been properly declared in manifest file.
+MediaService: com.malopieds.innertune.playback.MusicService
+
+
+=== Checking Media UI Implementation ===
+
+Found 1 MediaLibraryService implementation(s):
+
+Analyzing MediaLibraryService implementation: com.malopieds.innertune.playback.MediaLibrarySessionCallback
+----------------------------------------------------
+
+Library Browser Hierarchy Analysis Results
+----------------------------------------
+✓ Valid onGetLibraryRoot implementation found
+✓ Valid onGetChildren implementation found
+Time taken for UI analysis: 0s
+
+=== Checking Media Session Implementation ===
+
+Analysis Summary:
+================
+Classes analyzed: 0
+Time taken for Playback analysis: 0s
+
+=== Analysis Complete ===
+Time taken for Total Analysis: 6s

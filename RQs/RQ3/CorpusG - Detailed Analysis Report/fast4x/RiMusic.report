@@ -1,0 +1,86 @@
+java -jar app/build/libs/carcompat-0.3.0.jar -a apks-test/rimusic.apk                        
+
+=== Android Auto Compatibility Analysis ===
+
+APK validation successful: apks-test/rimusic.apk
+Time taken for APK validation: 0s
+
+Warning: Current memory allocation may be insufficient for large APKs
+Current allocation: 4GB
+Recommended allocation: 10GB
+For better performance with large APKs, consider running with:
+java -Xmx10g -jar carcompat-0.2.0.jar -a /path/to/your/app.apk
+
+Initializing analysis framework...
+Time taken for Soot initialization: 7s
+
+=== Checking AndroidManifest.xml ===
+Time taken for Manifest analysis: 0s
+✓ 'MediaBrowserService' has been properly declared in manifest file.
+✓ Media Service has been exported.
+✓ 'MEDIA_PLAY_FROM_SEARCH' has been properly declared in manifest file.
+MediaService: it.fast4x.rimusic.service.modern.PlayerServiceModern
+
+
+=== Checking Media UI Implementation ===
+
+Found 1 MediaLibraryService implementation(s):
+
+Analyzing MediaLibraryService implementation: it.fast4x.rimusic.service.modern.MediaLibrarySessionCallback
+----------------------------------------------------
+
+Library Browser Hierarchy Analysis Results
+----------------------------------------
+✓ Valid onGetLibraryRoot implementation found
+✓ Valid onGetChildren implementation found
+Time taken for UI analysis: 0s
+
+=== Checking Media Session Implementation ===
+Media class found: it.fast4x.rimusic.service.PlayerService$SessionCallback
+==============================================
+Setting it.fast4x.rimusic.service.PlayerService$SessionCallback as entry point...
+Building call graph...
+Call graph built with 250 edges.
+Adding edges from <init> to other class methods...
+Added 21 edges from <init> to other methods.
+Call graph now has 271 edges.
+Call graph generation complete!
+=== MediaSessionCallback Methods Validation ===
+Checking method: onSkipToPrevious
+Checking method: onPlayFromSearch
+Checking method: onPlayFromMediaId
+Checking method: onPause
+Checking method: onPlay
+Checking method: onStop
+Checking method: onSkipToNext
+Found 1 issues with MediaSessionCallback implementation:
+  - Issue: Missing or invalid implementation of  onPlayFromMediaId in MediaSessionCallback
+==============================================
+Media class found: it.fast4x.rimusic.service.PlayerMediaBrowserService$SessionCallback
+==============================================
+Setting it.fast4x.rimusic.service.PlayerMediaBrowserService$SessionCallback as entry point...
+Building call graph...
+Call graph built with 5105 edges.
+Adding edges from <init> to other class methods...
+Added 11 edges from <init> to other methods.
+Call graph now has 5116 edges.
+Call graph generation complete!
+=== MediaSessionCallback Methods Validation ===
+Checking method: onSkipToPrevious
+Checking method: onPlayFromSearch
+Checking method: onPlayFromMediaId
+Checking method: onPause
+Checking method: onPlay
+Checking method: onStop
+Checking method: onSkipToNext
+Found 1 issues with MediaSessionCallback implementation:
+  - Issue: Missing or invalid implementation of  onStop in MediaSessionCallback
+==============================================
+
+Analysis Summary:
+================
+Classes analyzed: 2
+Time taken for Playback analysis: 15s
+
+=== Analysis Complete ===
+Time taken for Total Analysis: 24s
