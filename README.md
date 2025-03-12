@@ -19,7 +19,7 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 
 ### Application Resources
 - [apks](/apks) - directory containing the apks in corpus-g used for compatibility testing and analysis.
-- carcompat-0.3.0.jar - our jar library tool for android auto compatibility testing, available for download on the releases page.
+- [carcompat-0.3.0.jar](/carcompat-0.3.0.jar) - our jar library tool for android auto compatibility testing, available for download on the releases page.
 
 ### Research Output
 - [Evaluation Results](/RQs/) - directory containing evaluation results organized by research questions. Includes statistical analysis, test outputs, and performance metrics used to validate project hypotheses.
@@ -62,7 +62,7 @@ $ java -jar carcompat-0.3.0.jar -a apks/retromusicplayer.apk
 ## Evaluation Results
 
 The reports for our research are available in the [RQs](/RQs/) folder.
-Detailed reports for each apk analysis has been saved and made available [here](RQs/RQ4&5/) and [here](RQs/RQ3/).
+Detailed reports for each apk analysis has been saved and made available [here](RQs/RQ3/) and [here](RQs/RQ4/).
 
 ## License
 This artifact is licensed under the GPL v3 License. See [LICENSE](LICENSE) for details.
