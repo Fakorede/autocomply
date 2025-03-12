@@ -18,7 +18,7 @@ dataset is referred to as [Corpus-R](/RQs/RQ2/Corpus-R.csv).
 
 ## Answer
 
-We manually examine each Android Auto issue and classify them based on their manifestation. Following analysis and discussion, all authors reached a consensus on three primary categories: T1 - Media Playback, T2 - User Interface, and T3 - Voice Commands.
+We manually examine each Android Auto issue and classify them based on their manifestation. Following analysis and discussion, all authors reached a consensus on three primary categories: `T1 - Media Playback`, `T2 - User Interface`, and `T3 - Voice Commands`.
 
 A common theme among
 these three issues is an oversight by developers when implement-

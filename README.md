@@ -11,12 +11,15 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 - [car_feat.py](/car_feat.py) - Python binary analysis tool used to perform Android Auto specific feature checks.
 
 ### Data Files
-- [github_search_results.csv](/github_search_results.csv) - contains the GitHub code search results for Android Auto supported repositories.
+- [Corpus-L](/RQs/RQ1/Corpus-L.csv) - dataset of 4,387 apps used in our formative study.
+- [Corpus-R](/RQs/RQ2/Corpus-R.csv) - dataset of 44 apps used in our formative study.
+- [Corpus-G](/RQs/RQ3/Corpus-G.csv) - dataset of 44 apps used in our evaluation of CarCompat.
+- [github_search_results.csv](/github_search_results.csv) - contains the GitHub code search results for Android Auto supported repositories used in our evaluation.
 - [github_repo_details.csv](/github_repo_details.csv) - contains dataset of GitHub repository metadata including relevant metrics.
 
 ### Application Resources
 - [apks](/apks) - directory containing the apks in corpus-g used for compatibility testing and analysis.
-- carcompat-0.3.0.jar - jar library tool for android auto compatibility testing, available for download on the releases page.
+- carcompat-0.3.0.jar - our jar library tool for android auto compatibility testing, available for download on the releases page.
 
 ### Research Output
 - [Evaluation Results](/RQs/) - directory containing evaluation results organized by research questions. Includes statistical analysis, test outputs, and performance metrics used to validate project hypotheses.
