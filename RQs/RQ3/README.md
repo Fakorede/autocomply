@@ -2,7 +2,8 @@
 
 > Can CarCompat be applied to real-world apps and find issues?
 
-To evaluate the applicability of CarCompat, we analyzed its performance on two datasets: Corpus-G, consisting of open-source Android Auto apps, and Corpus-P, comprising proprietary commercial apps.
+To evaluate the applicability of CarCompat, we applied it to [Corpus-G](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/Corpus-G.csv), a dataset of 44 open-source Android Auto apps spanning diverse categories and development practices. 
+The objective was to assess whether CarCompat could effectively detect compatibility issues across various real-world apps and remain computationally efficient for large-scale analysis.
 
 This directory contains the complete results of our evaluation of `CarCompat` on all apps in **Corpus-G**.
 
