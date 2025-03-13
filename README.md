@@ -6,8 +6,10 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 ## Artifacts
 
 ### Python Scripts
+- [fdroid_crawler.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Python script we used for collecting Free and Open Source Software android APKs from [f-droid](https://f-droid.org/en/).
+- [helpers.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Utility script for functions we ussed in the `fdroid_crawler.py` script.
 - [github_code_search.py](https://anonymous.4open.science/r/carcompat-0503/github_code_search.py) - Python script we used for searching GitHub repositories for android auto patterns. 
-- [github_repo_details.py](https://anonymous.4open.science/r/carcompat-0503/github_repo_details.py) - Python utility we used for extracting detailed metadata from the GitHub repositories we retrieved.
+- [github_repo_details.py](https://anonymous.4open.science/r/carcompat-0503/github_repo_details.py) - Python script we used for extracting detailed metadata from the GitHub repositories we retrieved.
 - [car_feat.py](https://anonymous.4open.science/r/carcompat-0503/car_feat.py) - Python binary analysis tool used to perform Android Auto specific feature checks.
 
 ### Data Files
