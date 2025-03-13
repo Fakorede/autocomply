@@ -7,7 +7,7 @@ the subset of apps that have explicitly added support for Android
 Auto and have [reported issues](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ2/Issues.csv) in their repositories. This refined
 dataset is referred to as [Corpus-R](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ2/Corpus-R.csv).
 
-### Breakdown of Android Auto App Issues in Different Categories for *Corpus-R*.**
+### Breakdown of Android Auto App Issues in Different Categories for *Corpus-R*.
 
 | Issue Category | Number of Issues |
 |----------------|------------------|

@@ -8,23 +8,21 @@ This directory contains the complete results of our evaluation of `CarCompat` on
 
 Apps in Corpus-G are made available in the `/apks` folder [here](https://anonymous.4open.science/r/carcompat-0503/apks/).
 
-Apps in Corpus-P are unavailble due to Google's distribution policy.
 
+### CarCompat's performance on open-source Android Auto applications in *Corpus-G*
 
-### Comparison of CarCompat's performance on open-source and commercial Android Auto applications
-
-|  CarCompat Evaluation Metrics | Corpus-G | Corpus-P |
-|---|---|---|
-| \# of Apks | 44 | 13 |
-| \# of Apps w Issues | 15| 2 |
-| \# of Issues Detected | 27 | 4 |
-| GeoMean Time(s) | 5.6 | 7.2 |
-| LoC  | 6.5m  | -  |
+|  CarCompat Evaluation Metrics | Corpus-G |
+|---|---|
+| \# of Apks | 44 |
+| \# of Apps w Issues | 15|
+| \# of Issues Detected | 27 |
+| GeoMean Time(s) | 5.6 |
+| LoC  | 6.5m  |
 
 
 ## Answer
 
-CarCompat is applicable to both open-source and commercial Android Auto apps, detecting compatibility issues efficiently. Its scalability allows analysis across diverse codebases, enabling early issue detection and compliance with platform requirements.
+CarCompat is applicable to real-world Android Auto apps and achieves low runtime, enabling efficient detection of compatibility issues in real-world Android Auto apps. Its scalability makes it a practical tool for identifying and addressing compatibility challenges across diverse codebases.
 
 
 
