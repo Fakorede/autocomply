@@ -9,8 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from helpers import extract_package_name, get_count, get_property_from_csv, transform_string, load_categories_from_csv, save_category_to_csv, save_app_info_to_csv
 
 
-android_apps_csv_file = 'android_apps.csv'
-categories_csv_file = 'android_apps_categories.csv'
+android_apps_csv_file = 'fdroid_apps.csv'
+categories_csv_file = 'fdroid_app_categories.csv'
 
 apps_folder = "android_apks"
 
@@ -20,13 +20,9 @@ service = Service(executable_path="/usr/bin/chromedriver")
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--remote-debugging-port=9222")
-# options.add_experimental_option("detach", True)
-# options.add_argument("--start-maximized")
-# options.add_argument("--lang=en")
-# options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
 options.add_argument("--no-sandbox")
 
-download_dir = f"/home/researchuser/dev/android-auto-scrapper/{apps_folder}"
+download_dir = f"/home/researchuser/dev/fdroid-scrapper/{apps_folder}"
 options.add_experimental_option("prefs", {"download.default_directory":  download_dir})
 
 driver = webdriver.Chrome(options=options, service=service)

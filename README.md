@@ -6,8 +6,8 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 ## Artifacts
 
 ### Python Scripts
-- [fdroid_crawler.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Python script we used for collecting Free and Open Source Software android APKs from [f-droid](https://f-droid.org/en/).
-- [helpers.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Utility script for functions we ussed in the `fdroid_crawler.py` script.
+- [fdroid_crawler.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Python script we used for collecting Free and Open Source Software android APKs from [f-droid](https://f-droid.org/en/). Running this script required downloading the Selenium ChromeDriver.
+- [helpers.py](https://anonymous.4open.science/r/carcompat-0503/fdroid_crawler.py) - Utility script for functions we used in the `fdroid_crawler.py` script.
 - [github_code_search.py](https://anonymous.4open.science/r/carcompat-0503/github_code_search.py) - Python script we used for searching GitHub repositories for android auto patterns. 
 - [github_repo_details.py](https://anonymous.4open.science/r/carcompat-0503/github_repo_details.py) - Python script we used for extracting detailed metadata from the GitHub repositories we retrieved.
 - [car_feat.py](https://anonymous.4open.science/r/carcompat-0503/car_feat.py) - Python binary analysis tool used to perform Android Auto specific feature checks.
@@ -16,8 +16,6 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 - [Corpus-L](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ1/Corpus-L.csv) - dataset of 4,387 apps used in our formative study.
 - [Corpus-R](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ2/Corpus-R.csv) - dataset of 44 apps used in our formative study.
 - [Corpus-G](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/Corpus-G.csv) - dataset of 44 apps used in our evaluation of CarCompat.
-- [github_search_results.csv](https://anonymous.4open.science/r/carcompat-0503/github_search_results.csv) - contains the GitHub code search results for Android Auto supported repositories used in our evaluation.
-- [github_repo_details.csv](https://anonymous.4open.science/r/carcompat-0503/github_repo_details.csv) - contains dataset of each GitHub repository metadata including relevant metrics.
 
 ### Application Resources
 - [apks](https://anonymous.4open.science/r/carcompat-0503/apks) - directory containing the apks in corpus-g used for compatibility testing and analysis.
@@ -38,9 +36,8 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 $ git clone <repo>
 $ cd <repo>
 $ git clone https://github.com/Sable/android-platforms
-$ pip install git+https://github.com/appknox/pyaxmlparser.git
-$ pip install androguard==3.3.5
-$ chmod +x car_feat.py
+$ chmod +x setup.sh
+$ ./setup.sh # Install dependencies
 ```
 
 ## Compile
