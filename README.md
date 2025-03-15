@@ -1,6 +1,18 @@
 # CarCompat
 
-CarCompat is the static analysis tool we introduce in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps".
+> CarCompat is the static analysis tool we introduce in our paper "Analyzing and Detecting Compatibility Issues in Android Auto Apps".
+
+
+We introduce `CarCompat`, a static analysis framework that detects compatibility problems in Android Auto apps. `CarCompat` constructs Car-Control Flow Graph (CCFG) to capture interactions between app components, lifecycle methods, and platform-specific callbacks. It applies specialized checkers to detect UI violations, media playback errors, and issues with voice command handling.
+We evaluated `CarCompat` on a dataset of $44$ Android Auto apps and detected $27$ new issues, $9$ of which have been confirmed by developers, and $3$ of the confirmed issues have already been fixed. 
+The results show that `CarCompat` helps developers identify and fix compatibility issues, improving the in-vehicle experience.
+
+
+![Car compat analysis](https://anonymous.4open.science/r/carcompat-0503/carcompat-illustration.png)
+
+
+
+This artifact contains the python scripts we used to retrieve apks with android auto support from FDroid and GitHub for our study and evaluation, and also a binary of CarCompat. It also contains [reports](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/CorpusG%20-%20Detailed%20Analysis%20Report/) generated for each of these apks in [Corpus-G](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/Corpus-G.csv).
 
 
 ## Artifacts
@@ -19,39 +31,87 @@ CarCompat is the static analysis tool we introduce in our paper "Analyzing and D
 
 ### Application Resources
 - [apks](https://anonymous.4open.science/r/carcompat-0503/apks) - directory containing the apks in corpus-g used for compatibility testing and analysis.
-- [carcompat-0.3.0.jar](https://anonymous.4open.science/r/carcompat-0503/carcompat-0.3.0.jar) - our jar library tool for android auto compatibility testing, available for download on the releases page.
+- [carcompat-0.3.0.jar](https://anonymous.4open.science/r/carcompat-0503/carcompat-0.3.0.jar) - our tool for android auto compatibility testing.
 
 ### Research Output
 - [RQs](https://anonymous.4open.science/r/carcompat-0503/RQs/) - directory containing evaluation results organized by research questions. Includes statistical analysis, test outputs, and performance metrics used to validate project hypotheses.
 
+
+### Artifact Directory Tree
+
+```
+/
+├── RQs/
+│   ├── RQ1/
+│   │   ├── Corpus-L.csv
+│   │   └── README.md
+│   ├── RQ2/
+│   │   ├── Corpus-R.csv
+│   │   ├── Issues.csv
+│   │   └── README.md
+│   ├── RQ3/
+│   │   ├── CorpusG - Detailed Analysis Report/
+│   │   ├── Corpus-G.csv
+│   │   ├── README.md
+│   │   └── RQ3.csv
+│   └── RQ4/
+│       ├── RQ4 - Detailed Issues Report/
+│       ├── README.md
+│       └── RQ4.csv
+├── RQ5/README.md
+├── RQ6/README.md
+├── RQ7/README.md
+├── apks/
+├── LICENSE
+├── README.md
+├── car_feat.py
+├── carcompat-0.3.0.jar
+├── fdroid_app_categories.csv
+├── fdroid_crawler.py
+├── github_code_search.py
+├── github_repo_details.py
+├── helpers.py
+└── setup.sh
+```
 
 ## Requirements
 
 - Java 17
 - Python 3
 
-## Setup
+## Download
+
+To run the analysis using the binary, you need to have Java 17 and Python3 installed. Then follow the instructions
+
+1. Git clone the GitHub repo or Download the repository from [here](https://anonymous.4open.science/r/carcompat-0503/README.md)
+
+2. Open your terminal and navigate to the root path of the project
+
+3. Ensure you follow the setup instructions provided below before running the analysis. You must:
+
+- clone the `android-platforms` in the root of the project
+- run the `setup.sh` script
+
+4. Download the archived apks, unzip and place them in the `/apks` folder.
+
+## Setup Instructions
 
 ```shell
-$ git clone <repo>
-$ cd <repo>
+$ cd carcompat-0503
 $ git clone https://github.com/Sable/android-platforms
 $ chmod +x setup.sh
-$ ./setup.sh # Install dependencies
+$ ./setup.sh # Install python dependencies
 ```
 
-## Compile
-
-Download our tool on the releases page or [here](https://anonymous.4open.science/r/carcompat-0503/carcompat-0.3.0.jar).
+<!-- ## Compile
 
 ```shell
-# or build manually
 $ ./gradlew build
-```
+``` -->
 
 ## Run
 
-All **open source** apks used for the evaluation section of our paper is available [here](https://anonymous.4open.science/r/carcompat-0503/apks/).
+All apks used for the evaluation section of our paper should be downloaded from the provided link and place [here](https://anonymous.4open.science/r/carcompat-0503/apks/).
 
 ```shell
 # example usage
