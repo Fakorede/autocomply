@@ -10,7 +10,7 @@ This directory contains the complete results of our evaluation of `CarCompat` on
 Apps in Corpus-G are made available in the `/apks` folder [here](https://anonymous.4open.science/r/carcompat-0503/apks/).
 
 
-### CarCompat's performance on open-source Android Auto applications in *Corpus-G*
+**Table: CarCompat's performance on open-source Android Auto applications in *Corpus-G***
 
 |  CarCompat Evaluation Metrics | Corpus-G |
 |---|---|

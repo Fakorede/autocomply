@@ -5,7 +5,7 @@
 We collected all available apps from F-Droid, resulting in a [dataset](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ1/Corpus-L.csv) of 4,387
 Android apps, which we refer to as [Corpus-L](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ1/Corpus-L.csv).
 
-### Category distribution of Android Auto Apps discovered in *Corpus-L*
+**Table: Table: Category distribution of Android Auto Apps discovered in *Corpus-L***
 
 | Categories | Description | # of apps |
 |------------|-------------|-----------|

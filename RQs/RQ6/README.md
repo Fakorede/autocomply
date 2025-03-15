@@ -2,7 +2,7 @@
 
 > What is the distribution of compatibility issues across these categories in real-world Android Auto apps?
 
-### Distribution of Android Auto Compatibility Issues by Category
+**Table: Distribution of Android Auto Compatibility Issues by Category**
 
 | Issue category | # of Issues | # of Apps |
 |---|---|---|

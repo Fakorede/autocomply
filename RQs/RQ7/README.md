@@ -3,7 +3,7 @@
 > Do developers agree with the compatibility issues detected by CarCompat, and how often are these issues acknowledged or addressed?
 
 
-**Table 1: Summary of Android Auto compatibility issues detected by CarCompat and developer response**
+**Table: Summary of Android Auto compatibility issues detected by CarCompat and developer response**
 
 |  |  |
 |---|---|
@@ -12,7 +12,7 @@
 | \# of Issues Fixed | 3 |
 
 
-**Table 2: Detailed breakdown of reported issues with developer feedback (gotten so far)**
+**Table: Detailed breakdown of reported issues with developer feedback (gotten so far)**
 
 |  App | Issue Count | Issue # |  Issue Type | Status |
 |---|---|---|---|---|

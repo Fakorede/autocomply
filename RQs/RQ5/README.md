@@ -4,7 +4,7 @@
 
 To evaluate CarCompat against existing Android Auto analysis tools, we compare it with Android Lint, which, to the best of our knowledge, is the only tool that includes built-in checks for Android Auto compatibility violations. 
 
-### Performance comparison between CarCompat and Android Lint on the 15 apps in Corpus-G with detected issues
+**Table: Performance comparison between CarCompat and Android Lint on the 15 apps in Corpus-G with detected issues**
 
 | Evaluation Metrics  | CarCompat | Android Lint |
 |---|---|---|
