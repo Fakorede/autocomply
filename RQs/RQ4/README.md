@@ -1,14 +1,23 @@
-# RQ 4: Effectiveness of CarCompat
+# RQ7 (Usefulness)
 
-> Can CarCompat effectively and precisely detect Android Auto compatibility issues?
+> Do developers acknowledge and address issues detected by AutoComply?
 
-To evaluate the effectiveness of CarCompat, we assessed its accuracy on 15 Android Auto apps where either Android Lint or CarCompat detected at least one compatibility issue in [RQ3](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ3/README.md).
 
-Details of the detected issues are available [here](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4%20-%20Detailed%20Issues%20Report/).
+**Table: Summary of Android Auto compliance violations detected by AutoComply and developer response**
 
-[RQ4.csv](https://anonymous.4open.science/r/carcompat-0503/RQs/RQ4/RQ4.csv) contains the table summarizing these issues.
+|  |  |
+|---|---|
+| \# of Issues Detected | 27 |
+| \# of Issues Confirmed | 14 |
+| \# of Issues Fixed | 8 |
+
+
+
+Details of the detected issues are available [here](https://anonymous.4open.science/r/autocomply/RQs/RQ2/RQ2%20-%20Detailed%20Issues%20Report/).
+
+[RQ2.csv](https://anonymous.4open.science/r/autocomply/RQs/RQ2/RQ2.csv) contains the table summarizing these issues.
+
 
 ## Answer
 
-CarCompat achieves high accuracy in detecting Android Auto compatibility issues, correctly identifying 27 issues with no false positives or false negatives. These results demonstrate that CarCompat provides reliable checks on real-world Android Auto apps.
-
+AutoComply effectively identifies actionable compliance violations that developers find valuable. All fixed issues were verified to resolve the detected violations. The positive reception, rapid fix adoption, and measurable quality improvements demonstrate that AutoComply provides practical value to developers.
